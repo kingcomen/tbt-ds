@@ -7,6 +7,15 @@ Format: [Semantic Versioning](https://semver.org)
 
 ## [Unreleased]
 
+### Added
+
+- Claude Code project skill `tbt-ds-pitfalls` at `.claude/skills/tbt-ds-pitfalls/`
+  (`SKILL.md` + `references/notes.md`), moved in from the private `king-skill-chain`
+  store so the pitfalls ship with the code they describe and load automatically for
+  anyone who clones this repo — no junction setup. Trigger paths dropped their old
+  `tbt-ds/` prefix to match this repo's root (`components/**`, `templates/**`,
+  `netsuite/**`, `theme/tbt-theme.css`). Content otherwise unchanged. (#93)
+
 ## [1.46.1] - 2026-07-17
 
 ### Changed
