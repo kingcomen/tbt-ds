@@ -9,6 +9,8 @@ Format: [Semantic Versioning](https://semver.org)
 
 ### Added
 
+- Canonical GitHub Issue Forms, validation workflow and vendored validator for the
+  team/AI issue standard, with legacy forms archived for reference. (#95)
 - Claude Code project skill `tbt-ds-pitfalls` at `.claude/skills/tbt-ds-pitfalls/`
   (`SKILL.md` + `references/notes.md`), moved in from the private `king-skill-chain`
   store so the pitfalls ship with the code they describe and load automatically for

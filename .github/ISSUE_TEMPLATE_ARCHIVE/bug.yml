@@ -1,0 +1,40 @@
+name: Bug report
+description: รายงานบั๊กของ component / template / backend ใน repo นี้
+labels: ["bug"]
+body:
+  - type: textarea
+    id: symptom
+    attributes:
+      label: อาการ
+      description: เกิดอะไรขึ้น เทียบกับสิ่งที่ควรเป็น
+      placeholder: "tbt-dropdown popup โดน clip เมื่ออยู่ใน tbt-section ที่มี overflow"
+    validations:
+      required: true
+  - type: input
+    id: component
+    attributes:
+      label: Component / ไฟล์ที่เกี่ยว
+      placeholder: "components/tbt-dropdown.js · templates/sl_po_form.js"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: ขั้นตอน reproduce + ตัวอย่าง
+      description: หน้าที่เปิด (demo/specimen.html, หน้า Suitelet ไหน) + ลำดับกดจนเจอ — ห้ามแปะข้อมูลจริงที่ขัด classification `Internal`
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: หลักฐาน
+      description: screenshot / console error / ผล test ที่ fail
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: DS version
+      placeholder: "v1.43.0 (ดูจาก package.json หรือ path ใน File Cabinet)"
+    validations:
+      required: true

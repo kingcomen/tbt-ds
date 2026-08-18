@@ -1,0 +1,30 @@
+name: "📚 Docs"
+description: "เปลี่ยนเอกสารอย่างเดียว"
+title: "[Docs] "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: work
+    attributes:
+      label: "งาน"
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: "เหตุผล"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "ขอบเขต"
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: "เช็คว่าเสร็จ"
+      placeholder: "- [ ] ..."
+    validations:
+      required: true

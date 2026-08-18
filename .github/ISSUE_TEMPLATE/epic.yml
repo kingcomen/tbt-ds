@@ -1,0 +1,40 @@
+name: "🗂️ Epic"
+description: "Outcome ใหญ่ที่ต้องแตก child issue หลายใบ"
+title: "[Epic] "
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: "Epic เป็นทะเบียนแม่ · defect/task ที่ assign หรือปิดแยกได้ต้องเป็น child issue"
+  - type: textarea
+    id: goal
+    attributes:
+      label: "เป้าหมาย"
+    validations:
+      required: true
+  - type: textarea
+    id: measurable_outcome
+    attributes:
+      label: "ผลลัพธ์ที่วัดได้"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "ขอบเขต"
+    validations:
+      required: true
+  - type: textarea
+    id: children
+    attributes:
+      label: "Child issues"
+      placeholder: "- [ ] #123 — ..."
+    validations:
+      required: true
+  - type: textarea
+    id: exit_criteria
+    attributes:
+      label: "Exit criteria"
+      placeholder: "- [ ] ..."
+    validations:
+      required: true
